@@ -63,10 +63,10 @@ void Queue<T>::dequeue(T& num)
 		cout << "The queue is Empty.\n";
 	else
 	{
-		// Retrieve front item
-		num = queueArray[front]
 		// Calculate the new rear position
 		front = (front + 1) % queueSize;
+		// Retrieve front item
+		num = queueArray[front];
 		// Update item count
 		numItems--;
 	}
